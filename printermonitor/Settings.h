@@ -60,7 +60,7 @@ SOFTWARE.
 
 // OctoPrint / Repetier Monitoring -- Monitor your 3D OctoPrint or Repetier Server
 //#define USE_REPETIER_CLIENT       // Uncomment this line to use the Repetier Printer Server -- OctoPrint is used by default and is most common
-String PrinterApiKey = "";   // ApiKey from your User Account on OctoPrint / Repetier
+String PrinterApiKey = "003AAAB5FC864978B059F842078256E9";   // ApiKey from your User Account on OctoPrint / Repetier
 String PrinterHostName = "octopi";// Default 'octopi' -- or hostname if different (optional if your IP changes)
 String PrinterServer = "";   // IP or Address of your OctoPrint / Repetier Server (DO NOT include http://)
 int PrinterPort = 80;        // the port you are running your OctoPrint / Repetier server on (usually 80);
@@ -69,10 +69,10 @@ String PrinterAuthPass = "";      // only used with haproxy or basic auth (only 
 
 // Weather Configuration
 boolean DISPLAYWEATHER = true; // true = show weather when not printing / false = no weather
-String WeatherApiKey = ""; // Your API Key from http://openweathermap.org/
+String WeatherApiKey = "e213e67ea09a1d9a7164e07506d60580"; // Your API Key from http://openweathermap.org/
 // Default City Location (use http://openweathermap.org/find to find city ID)
-int CityIDs[] = { 5304391 }; //Only USE ONE for weather marquee
-boolean IS_METRIC = false; // false = Imperial and true = Metric
+int CityIDs[] = { 1819730 }; //Only USE ONE for weather marquee
+boolean IS_METRIC = true; // false = Imperial and true = Metric
 // Languages: ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw
 String WeatherLanguage = "en";  //Default (en) English
 
@@ -84,7 +84,7 @@ char* www_username = "admin";  // User account for the Web Interface
 char* www_password = "password";  // Password for the Web Interface
 
 // Date and Time
-float UtcOffset = -7; // Hour offset from GMT for your timezone
+float UtcOffset = 8; // Hour offset from GMT for your timezone
 boolean IS_24HOUR = false;     // 23:00 millitary 24 hour clock
 int minutesBetweenDataRefresh = 15;
 boolean DISPLAYCLOCK = true;   // true = Show Clock when not printing / false = turn off display when not printing
@@ -92,7 +92,7 @@ boolean DISPLAYCLOCK = true;   // true = Show Clock when not printing / false = 
 // Display Settings
 const int I2C_DISPLAY_ADDRESS = 0x3c; // I2C Address of your Display (usually 0x3c or 0x3d)
 const int SDA_PIN = D2;
-const int SCL_PIN = D5; // original code D5 -- Monitor Easy Board use D1
+const int SCL_PIN = D1; // original code D5 -- Monitor Easy Board use D1
 boolean INVERT_DISPLAY = false; // true = pins at top | false = pins at the bottom
 //#define DISPLAY_SH1106       // Uncomment this line to use the SH1106 display -- SSD1306 is used by default and is most common
 
@@ -104,7 +104,7 @@ boolean USE_FLASH = true; // true = System LED will Flash on Service Calls; fals
 boolean HAS_PSU = false; // Set to true if https://github.com/kantlivelong/OctoPrint-PSUControl/ in use
 
 // OTA Updates
-boolean ENABLE_OTA = true;     // this will allow you to load firmware to the device over WiFi (see OTA for ESP8266)
+boolean ENABLE_OTA = false;     // this will allow you to load firmware to the device over WiFi (see OTA for ESP8266)
 String OTA_Password = "";      // Set an OTA password here -- leave blank if you don't want to be prompted for password
 
 //******************************
